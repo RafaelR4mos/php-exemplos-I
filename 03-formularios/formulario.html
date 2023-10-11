@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 - Formulários</title>
+</head>
+
+<body>
+  <fieldset>
+    <!-- Usamos o GET ou POST no método do form -->
+    <form action="./cadastro-banco.php" method="POST" style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label for="agencia">Agência</label>
+      <input type="number" id="agencia" name="agencia" placeholder="Agência" required>
+
+      <label for="nome">Nome banco</label>
+      <input id="nome" name="nome" placeholder="Nome Banco" required>
+
+      <label for="cidade">Cidade</label>
+      <input id="cidade" name="cidade" placeholder="Cidade" required>
+
+      <label for="estado">Estado</label>
+      <input id="estado" name="estado" placeholder="UF" required>
+
+      <input name="cadastrado" type="submit" value="Cadastrar">
+    </form>
+  </fieldset>
+</body>
+
+</html>
