@@ -5,6 +5,9 @@
     echo "Nome: {$_POST["nome"]}" . "<br/>";
     echo "Cidade: {$_POST["cidade"]}" . "<br/>";
     echo "Estado: {$_POST["estado"]}" . "<br/>";
+    
+    //echo "id_banco: {$_GET["id_banco"]}" . "<br/>";
+    // header("Location: formulario.html");
   }
 
 
