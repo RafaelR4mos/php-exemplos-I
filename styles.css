@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem calc((100% - var(--page-width)) / 2); /*Atribui padding nos lados de acordo com o tamanho da página*/
+  background-color: var(--primary);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+header nav a {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+}
+
+header nav a:last-child {
+  background-color: black;
+}

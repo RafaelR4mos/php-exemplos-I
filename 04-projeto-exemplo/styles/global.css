@@ -1,0 +1,42 @@
+/*Cores base do projeto*/
+:root {
+  --text: #130e01;
+  --background: #fffaeb;
+
+  --primary: #ff8400;
+  --secondary: #fff5d6;
+  --accent: #cf4307;
+
+  --page-width: 90%;
+
+  --white: #fff;
+  --black: #000;
+}
+
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; /*remove estilo padrão da tag âncora*/
+  color: var(--text);
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+main {
+  max-width: var(--page-width);
+  margin: 2rem auto;
+}

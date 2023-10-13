@@ -1,0 +1,66 @@
+.bancos-especifico-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bancos-especifico-header i {
+  font-size: 24px;
+}
+.bancos-especifico-header a {
+  padding: 0.2rem;
+  color: var(--primary);
+}
+
+.bancos-especifico-header a:hover {
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+.banco-info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.banco-info > h2 {
+  margin-bottom: 1.5rem;
+}
+
+.banco-info > div {
+  margin-bottom: 1rem;
+}
+
+.banco-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.banco-btn-container .action-btn {
+  border-radius: 4px;
+  padding: 0.4rem;
+  width: 100%;
+
+  color: var(--text);
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background-color: var(--primary);
+
+  transition: all 0.3s;
+}
+
+.banco-btn-container .action-btn:last-child {
+  background-color: rgb(150, 9, 9);
+  color: var(--white);
+}
+
+.banco-btn-container .action-btn:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
