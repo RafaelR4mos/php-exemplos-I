@@ -2,7 +2,10 @@
 require_once "./bancos-lista.php";
 session_start();
 
-$dadosBancos = $_SESSION["bancos"];
+if(isset($_SESSION["bancos"])) {
+  $dadosBancos = $_SESSION["bancos"];
+}
+
 ?>
 
 <!DOCTYPE html>
