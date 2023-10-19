@@ -3,7 +3,7 @@ require_once "./bancos-lista.php";
 session_start();
 
 if(!isset($_SESSION["bancos"])) {
-  $dadosBancos = $_SESSION["bancos"] = $bancos;
+  $dadosBancos = $bancos;
 } else {
   $dadosBancos = $_SESSION["bancos"];
 }
