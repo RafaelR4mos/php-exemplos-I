@@ -3,17 +3,18 @@ require_once "./bancos-lista.php";
 session_start();
 
 if(isset($_GET["banco_ag"])) {
-  $dadosBanco = $_SESSION["bancos"][$_GET["banco_ag"]];
+  $agBanco = $_GET["banco_ag"];
+
+  $dadosBanco = $_SESSION["bancos"][$agBanco];
 }
 
 if(isset($_POST["sucesso"])) {
-  $bancos[$_POST["agencia"]] = [
+  $_SESSION["bancos"][$_POST["agencia"]] = [
     "nome" => $_POST["nome"],
     "cidade" => $_POST["cidade"],
     "estado" => $_POST["estado"]
   ];
 
-  $_SESSION["bancos"] = $bancos;
   header("Location: ./");
 }
 ?>

@@ -2,14 +2,12 @@
 require_once "./bancos-lista.php";
 session_start();
 
-if(isset($_SESSION["bancos"]) && count($_SESSION["bancos"]) > 4) {
-  $dadosBancos = $_SESSION["bancos"];
+if(!isset($_SESSION["bancos"])) {
+  $dadosBancos = $_SESSION["bancos"] = $bancos;
 } else {
-  $dadosBancos = $bancos;
+  $dadosBancos = $_SESSION["bancos"];
 }
 
-
-var_dump($dadosBancos);
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +31,7 @@ var_dump($dadosBancos);
       <hr>
     </div>
     <div class="bancos-container">
-    <?php foreach(isset($dadosBancos) ? $dadosBancos : $bancos as $ag => $banco) { ?>
+    <?php foreach($dadosBancos as $ag => $banco) { ?>
       <div class="banco">
         <strong><?= $banco["nome"] ?></strong>
         <span>Agência: <?= $ag ?></span>
