@@ -1,11 +1,14 @@
 <?php
   session_start();
-
+  require "./bancos-lista.php";
 
   if(isset($_GET["banco_ag"])) {
     $agBanco = $_GET["banco_ag"];
-    $bancoEspecifico = $_SESSION["bancos"][$agBanco];
-  }
+
+    $bancoEspecifico = isset($_SESSION["bancos"][$agBanco]) 
+    ? $_SESSION["bancos"][$agBanco]
+    : $bancos[$agBanco];
+  } 
 
   if(isset($_POST["isDelete"])) {
     unset($_SESSION["bancos"][$agBanco]);

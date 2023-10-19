@@ -2,10 +2,14 @@
 require_once "./bancos-lista.php";
 session_start();
 
-if(isset($_SESSION["bancos"])) {
+if(isset($_SESSION["bancos"]) && count($_SESSION["bancos"]) > 4) {
   $dadosBancos = $_SESSION["bancos"];
+} else {
+  $dadosBancos = $bancos;
 }
 
+
+var_dump($dadosBancos);
 ?>
 
 <!DOCTYPE html>
