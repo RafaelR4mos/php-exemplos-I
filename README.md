@@ -1,1 +1,6 @@
-# Desafios básicos de Algoritmo PHP
+Exemplo de renderização PHP
+
+--> Renderização Condicional
+--> Foreach
+--> Parâmetros de URL
+--> ...
